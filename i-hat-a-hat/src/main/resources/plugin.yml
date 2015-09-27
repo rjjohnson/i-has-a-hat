@@ -1,0 +1,11 @@
+main: com.subtextgroup.mcp.ihah.IHasAHat
+name: I Has a Hat
+version: 1.0
+author: ryanjohnson
+description: Minimalist hatting
+commands:
+  hatme:
+    description: Reports a user
+    usage: |
+      /hatme
+    aliases: hm
