@@ -27,7 +27,8 @@ public class IHasAHat extends JavaPlugin  {
             me.getEquipment().setHelmet(inHand);
             return true;
         } else {
-            sender.sendMessage("Not hattable: " + inHand != null ? inHand.getType().name() : "...");
+            String itemName = inHand != null ? inHand.getType().toString() : "[unknown]";
+            sender.sendMessage("Sorry, " + itemName + " cannot be worn as a hat :(");
             return false;
         }
         
